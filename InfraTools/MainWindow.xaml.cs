@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using InfraTools.AppInfo;
 
 namespace InfraTools
 {
@@ -22,6 +10,14 @@ namespace InfraTools
     {
         public MainWindow()
         {
+            Title = $"{AppInfo.AppInfo.AppTitle} Version {AppInfo.AppInfo.AppVersion}";
+            var imageTitle = new System.Windows.Controls.Image();
+            var uriSource = new System.Uri(@"../../Resources/BridgeIcon.svg", System.UriKind.Relative);
+            //if (uriSource != null)
+            //    if (uriSource.IsFile)
+            //        imageTitle.Source = new System.Windows.Media.Imaging.BitmapImage(uriSource);
+            //        Icon = imageTitle.Source;
+
             InitializeComponent();
         }
     }

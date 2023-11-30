@@ -3,10 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:local="clr-namespace:InfraTools"
+        xmlns:ifcComp="clr-namespace:IfcComparison;assembly=IfcComparison"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Height="600" Width="1400" MinWidth="1300" MinHeight="500">
+    <TabControl>
+        <TabItem Header="QA IFC" Width="100" Height="25">
+            <DockPanel>
+                <ifcComp:MainWindow/>
+            </DockPanel>
+        </TabItem>
+    </TabControl>
 </Window>
