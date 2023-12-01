@@ -118,5 +118,12 @@
   <ItemGroup>
     <Resource Include="BridgeIcon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Setup\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\BridgeIcon.ico" />
+    <Resource Include="Resources\BridgeIcon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
