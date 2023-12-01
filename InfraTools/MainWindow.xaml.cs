@@ -1,5 +1,4 @@
 ﻿using System.Windows;
-using InfraTools.AppInfo;
 
 namespace InfraTools
 {
@@ -11,8 +10,10 @@ namespace InfraTools
         public MainWindow()
         {
             Title = $"{AppInfo.AppInfo.AppTitle} Version {AppInfo.AppInfo.AppVersion}";
-            var imageTitle = new System.Windows.Controls.Image();
-            var uriSource = new System.Uri(@"../../Resources/BridgeIcon.svg", System.UriKind.Relative);
+            
+            /// Attempt to set the icon of the window from a resource svg file directly. Not working.
+            //var imageTitle = new System.Windows.Controls.Image();
+            //var uriSource = new System.Uri(@"../../Resources/BridgeIcon.svg", System.UriKind.Relative);
             //if (uriSource != null)
             //    if (uriSource.IsFile)
             //        imageTitle.Source = new System.Windows.Media.Imaging.BitmapImage(uriSource);
